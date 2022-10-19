@@ -1,0 +1,49 @@
+.footer
+  position: relative
+  background: $main
+  height: 516px
+  &-wrapper
+    display: flex
+    position: relative
+    padding-top: 72px
+    padding-bottom: 16px
+    align-items: center
+    justify-content: space-between
+    top: 72px
+  &-button
+    position: absolute
+  &-contacts
+    display: flex
+    flex-direction: column
+    align-items: center
+    position: absolute
+    top: 0
+    right: 0
+    width: 50%
+  &-heading
+    font-weight: 600
+    font-size: 18px
+    line-height: 1.75
+    letter-spacing: 0.04em
+    color: $contrast
+    margin-bottom: 32px
+    text-align: center
+    @include animMain
+    &._active
+      @include animActive
+  &-number
+    margin-bottom: 32px
+    @include animMain
+    &._active
+      @include animActive
+  &-email
+    @include animMain
+    &._active
+      @include animActive
+  &-aditional
+    position: absolute
+    bottom: 16px
+  &-icon
+    width: 52px
+    height: 42px
+    fill: $contrast

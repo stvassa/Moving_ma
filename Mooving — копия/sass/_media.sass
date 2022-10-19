@@ -1,0 +1,313 @@
+@media (max-width: 1200px)
+  .container
+    max-width: 960px
+    padding: 16px 64px
+  .main
+    padding: 64px 64px 72px 64px
+    margin-bottom: 72px
+    &__title
+      font-size: 48px
+      line-height: 62px
+    &__sub
+      &-title
+        margin-bottom: 72px
+      &-text
+        font-size: 18px
+        line-height: 36px
+  .services
+    &-wrapper
+      justify-content: space-evenly
+  .service
+    &-item
+      width: 364px
+  .tariff
+    &-wrapper
+      justify-content: center
+    &-slider
+      margin-bottom: 64px
+      &__container
+        width: 500px
+        height: 450px
+      &__text
+        display: none
+        &--mobile
+          display: block
+          color: $secondary
+          font-weight: 600
+          font-size: 18px
+          line-height: 42px
+          letter-spacing: 0.04em
+          text-align: right
+          padding: 16px 0
+    &-description
+      max-width: 800px
+@media (max-width: 992px)
+  .container
+    max-width: 860px
+  .main
+    margin-bottom: 48px
+    &__title
+      font-size: 48px
+      line-height: 56px
+  .services
+    margin-bottom: 0
+  .benefits
+    &-title
+      font-weight: 600
+      font-size: 40px
+      line-height: 48px
+      margin-bottom: 48px
+    &-wrapper
+      flex-direction: column
+      padding: 0 16px
+      &__1, &__2
+        width: 100%
+@media (max-width: 764px)
+  .header
+    &__container
+      flex-direction: row-reverse
+  .container
+    max-width: 600px
+  .menu
+    &-icon
+      z-index: 5
+      position: relative
+      display: block
+      width: 32px
+      height: 20px
+      cursor: pointer
+      span, &::before, &::after
+        left: 0
+        position: absolute
+        height: 10%
+        width: 100%
+        transition: all 0.3s ease 0s
+        background-color: $contrast
+      &::before, &::after
+        content: ''
+      &::before
+        top: 0
+      &::after
+        bottom: 0
+      span
+        top: 50%
+        transform: scale(1) translate(0px, -50%)
+      &._active
+        span
+          transform: scale(0) translate(0px, -50%)
+        &::before
+          top: 50%
+          transform: rotate(-45deg) translate(0px, -50%)
+        &::after
+          bottom: 50%
+          transform: rotate(45deg) translate(0px, 50%)
+    &-body
+      position: fixed
+      top: 0
+      right: -100%
+      width: 150px
+      height: max-content
+      background-color: $main
+      padding: 50px 0px 0px 30px
+      transition: right 0.3s ease 0s
+      overflow: auto
+      &._active
+        right: 0
+    &-list
+      flex-direction: column
+      padding: 32px 0
+    &-link
+      font-weight: 600
+      font-size: 18px
+      line-height: 2
+    .main
+      margin-bottom: 48px
+    &__title
+      font-size: 48px
+      line-height: 56px
+  .service
+    &-item
+      width: 364px
+  .tariff
+    padding: 16px 8px 100px 8px
+    &-item
+      font-size: 20px
+      line-height: 40px
+    &-wrapper
+      margin-bottom: 8px
+  .footer
+    height: 532px
+    &-wrapper
+      display: flex
+      flex-direction: column
+      top: 24px
+    &-button
+      top: 324px
+      // height footer-contacts+margin-bottom
+    &-contacts
+      width: 100%
+  .modal
+    &__dialog
+      width: 300px
+      height: 340px
+      padding: 16px
+    &__close
+      width: 24px
+      height: 24px
+    &-title
+      font-size: 12px
+      line-height: 14px
+      margin-bottom: 8px
+      padding: 0
+    &__input, &__message
+      font-size: 12px
+      line-height: 14px
+      min-height: 24px
+      margin-bottom: 8px
+    &__button
+      width: 147px
+      height: 28px
+      font-size: 12px
+      line-height: 14px
+      padding: 8px 16px
+    &-phone
+      &--wh
+        width: 34px
+        height: 32px
+    &-mailwh
+      width: 34px
+      height: 24px
+    &__text
+      font-size: 12px
+      line-height: 14px
+      margin-bottom: 8px
+@media (max-width: 600px)
+  .container
+    max-width: 540px
+  .main
+    min-height: 600px
+    &__title
+      font-size: 32px
+      line-height: 42px
+      margin-bottom: 36px
+    &__sub
+      &-text
+        font-size: 16px
+        line-height: 24px
+  .tariff
+    margin-bottom: 0
+    &-item
+      font-size: 20px
+      line-height: 28px
+      &::before
+        top: 12px
+    &-slider
+      width: 286px
+      height: 255px
+      &__container
+        width: 286px
+        height: 255px
+      &__desc
+        font-weight: normal
+        font-size: 8px
+        line-height: 12px
+    &-slide
+      &::after
+        height: 64px
+  .benefits
+    &-wrapper
+      margin-bottom: 0
+@media (max-width: 500px)
+  .container
+    max-width: 390px
+    padding: 8px 16px
+  .main
+    min-height: 600px
+    padding: 16px 16px 0 16px
+    margin-bottom: 56px
+    &-image
+      top: 50px
+  .services
+    &-title
+      font-weight: 700
+      font-size: 24px
+      line-height: 32px
+      margin-bottom: 32px
+  .tariff
+    &-title
+      margin-bottom: 16px
+    &__title
+      font-size: 24px
+      line-height: 24px
+      margin-bottom: 8px
+    &-sub--title
+      font-size: 16px
+      line-height: 24px
+    &-slider
+      &__text
+        &--mobile
+          font-size: 12px
+          line-height: 16px
+    &-wrapper
+      margin-bottom: 32px
+    &-item
+      font-size: 16px
+      line-height: 24px
+  .benefits
+    &-title
+      font-weight: 700
+      font-size: 24px
+      line-height: 32px
+      margin-bottom: 32px
+  .email
+    &-icon
+      width: 32px
+      height: 32px
+@media (max-width: 380px)
+  .container
+    max-width: 320px
+    padding: 8px 16px
+  .main
+    padding: 8px 16px 0 16px
+    margin-bottom: 56px
+    &-image
+      top: 50px
+    &__sub
+      &-title
+        margin-bottom: 32px
+  .footer
+    height: 468px
+    &-wrapper
+      top: 24px
+    &-heading
+      font-size: 16px
+      line-height: 24px
+      margin-bottom: 24px
+    &-number
+      margin-bottom: 16px
+    &-button
+      top: 217px
+  .email
+    font-size: 16px
+    line-height: 24px
+    &-wrapper
+      margin-bottom: 16px
+
+@media (max-width: 320px)
+  .container
+    max-width: 288px
+    padding: 8px 8px
+  .main
+    min-height: 556px
+    padding: 50px 16px 0 16px
+    margin-bottom: 56px
+    &-image
+      top: 50px
+    &-content
+      padding-top: 0
+    &__title
+      font-size: 24px
+      margin-bottom: 32px
+  .services
+    &-title
+      font-size: 24px

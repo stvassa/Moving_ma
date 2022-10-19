@@ -1,0 +1,61 @@
+.main
+  display: flex
+  position: relative
+  flex-direction: column
+  padding: 72px 120px 0 120px
+  min-height: 700px
+  margin-bottom: 120px
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))
+  &-image
+    position: absolute
+    background: url(../img/header-background-min.jpg) no-repeat center center
+    background-size: cover
+    height: 100%
+    top: 60px
+    bottom: 0
+    right: 0
+    left: 0
+    z-index: -1
+    &::after
+      content: ''
+      position: absolute
+      top: 0
+      bottom: 0
+      right: 0
+      left: 0
+      background: url(../img/bg-after-img.png)
+  &-content
+    position: relative
+    padding-top: 72px
+    z-index: 10
+  &__title
+    display: flex
+    font-weight: 800
+    font-size: 56px
+    line-height: 72px
+    letter-spacing: 8px
+    align-items: center
+    text-align: center
+    margin-bottom: 64px
+    text-transform: uppercase
+    color: $secondary
+    z-index: 2
+    @include animMain
+    &._active
+      @include animActive
+  &__sub
+    &-title
+      max-width: 787px
+    &-text
+      font-weight: 600
+      font-size: 24px
+      line-height: 48px
+      letter-spacing: 0.04em
+      color: $main
+      @include animBottom
+      &._active
+        @include animActive
+        transition-delay: 0.4s
+  &-button
+    position: absolute
+    right: 0

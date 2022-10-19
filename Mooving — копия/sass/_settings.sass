@@ -1,0 +1,93 @@
+*
+  box-sizing: border-box
+body
+  font-family: 'Exo 2', sans-serif
+  height: 100%
+  font-style: normal
+  font-weight: normal
+  font-size: 16px
+  line-height: 1
+
+.container
+  max-width: 1200px
+  margin: 0 auto
+img
+  width: 100%
+
+ul, ol, li
+  list-style: none
+  margin: 0
+
+a
+  text-decoration: none
+
+.button
+  background-color: $secondary
+  border-radius: 8px
+  border: none
+  cursor: pointer
+  padding: 16px 32px
+  text-align: center
+  text-decoration: none
+  color: $contrast
+  @keyframes glowing
+    0%
+      background-color: $secondary
+      box-shadow: 0 0 3px $secondary
+    50%
+      background-color: $secondary
+      box-shadow: 0 0 10px $secondary
+    100%
+      background-color: $secondary
+      box-shadow: 0 0 3px $secondary
+.button
+  animation: glowing 1300ms infinite
+.number
+  display: flex
+  padding: 0
+  font-weight: 600
+  color: $contrast
+  align-items: center
+  &:hover
+    text-decoration: underline
+.icon
+  width: 56px
+  height: 48px
+  fill: $secondary
+.email
+  font-weight: 600
+  font-size: 18px
+  line-height: 18px
+  letter-spacing: 0.04em
+  color: $contrast
+  &:hover
+    text-decoration: underline
+  &-wrapper
+    display: flex
+    align-items: center
+    text-decoration: none
+    margin-bottom: 32px
+  &-icon
+    margin-right: 16px
+    &--modal
+      color: $secondary
+.copiraight
+  font-size: 12px
+  line-height: 24px
+  align-items: center
+  color: $contrast
+.design
+  font-size: 12px
+  line-height: 24px
+  align-items: center
+  color: $contrast
+  &-link
+    color: $secondary
+    font-weight: 900
+    font-size: 12px
+    line-height: 24px
+    letter-spacing: 0.08em
+    padding-left: 8px
+    text-decoration: underline
+    &:hover
+      color: $contrast
